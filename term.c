@@ -25,6 +25,7 @@ char * term_to_string(const term_t * term) {
 	return termAsString;
 
 }
+/*
 int main(void) {
 	term_t testterm1 = {1, 'x', 0};
     term_t testterm2 = {2, 'x', 1};
@@ -36,3 +37,4 @@ int main(void) {
     printf("testterm2: %s\n", term_to_string(&testterm2));
     printf("testterm3: %s\n", term_to_string(&testterm3));
 }
+*/

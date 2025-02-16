@@ -74,15 +74,21 @@ int main(void) {
     /* 
         ADD CODE HERE TO ADD THE TERMS IN term_list TO A NEW POLYNOMIAL 
     */
+    poly_t * polynomial = new_polynomial();
+    curr = term_list;
+    while (curr!=NULL) {
+        add_to_polynomial(polynomial, curr);
+        curr = curr->next;
+    }
 
     /* Polynomial test code */
-    // printf("\nTesting polynomial.c/h : \n");
-    // printf("Original: : ");
-    // print_polynomial(poly1);
+    printf("\nTesting polynomial.c/h : \n");
+    printf("Original: : ");
+    print_polynomial(poly1);
     // poly2 = combine_like_terms(poly1);
     // printf("\nCombined: : ");
     // print_polynomial(poly2);
-    // printf("\nNAME: SAMPLE OUTPUT\n");
+    printf("\nNAME: SAMPLE OUTPUT\n");
 
     return 0;
 }
